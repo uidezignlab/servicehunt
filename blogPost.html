@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--meta tags-->
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Services Listing HTML5 CSS3 template">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, services, listing">
+    <meta name="author" content="Ui-DesignLab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--end meta tags-->
+
+
+    <title>Service-Hunt</title>
+
+    <!--stylesheets-->
+
+    <link rel="stylesheet" href="3rd-party/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="3rd-party/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="3rd-party/animate.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--end stylesheets-->
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Raleway|Roboto:100|Tangerine:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Passion+One:700" rel="stylesheet">
+    <!--end google fonts-->
+
+</head>
+<body>
+
+<!--modals-->
+
+<!--login modal-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="email1">Email:</label>
+                        <input type="email" class="form-control" name="email" autocomplete="email" id="email1">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">Password:</label>
+                        <input type="password" class="form-control" name="password" id="password1">
+                    </div>
+                    <div class="rem-forgot">
+                        <label for="rememberMe" class="ui-chk">
+                            <input type="checkbox" id="rememberMe" name="remember" checked>
+                            <span class="label-text">Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-pwd">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn ui-btn">Sign In</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--end login modal-->
+
+<!--register modal-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="email2">Email:</label>
+                        <input type="email" class="form-control" name="email" autocomplete="email" id="email2">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password:</label>
+                        <input type="password" class="form-control" name="password" id="password2">
+                    </div>
+                    <div class="form-group">
+                        <label for="password3">Confirm Password:</label>
+                        <input type="password" class="form-control" name="password" id="password3">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn ui-btn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end register modal-->
+
+<!--end modals-->
+
+
+<!--main-meu-->
+<nav class="main-menu">
+    <div class="landing-menu animated fadeIn">
+        <h2 class="margin-less"><a href="#" class="logo">ServiceListing</a></h2>
+        <ul class="list-inline land-menu margin-less">
+            <li class="list-inline-item menu-li"><a href="#">Home <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled">
+                    <li><a href="landingpage.html">Landing Page</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="#">Services <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled">
+                    <li><a href="listing.html">Grid Style</a></li>
+                    <li><a href="horizontalListing.html">List Style</a></li>
+                    <li><a href="service.html">Service Detail</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled animated">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blogPost.html">Blog Post</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="#">User Panel <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled animated">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="dash-messages.html">Messages</a></li>
+                    <li><a href="dash-messageBody.html">Message Detail</a></li>
+                    <li><a href="dash-reviews.html">Reviews</a></li>
+                    <li><a href="dash-myServices.html">Services</a></li>
+                    <li><a href="addService.html">Add Service</a></li>
+                    <li><a href="dash-profile.html">User Profile</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="pricing.html">Pricing</a></li>
+            <li class="list-inline-item menu-li"><a href="about.html">About</a></li>
+            <li class="list-inline-item menu-li"><a href="contact.html">Contact</a></li>
+            <li class="list-inline-item menu-li"><a href="#">Account <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled animated">
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <i class="fa fa-bars toggle-mn"></i>
+    </div>
+    <ul class="side-nav list-unstyled">
+        <li><h2 class="text-center"><a href="#" class="logo">Sv-Hunt</a></h2></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="landingpage.html">Landing Page</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="listing.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li class="cls-nav"><i class="fa fa-times"></i></li>
+    </ul>
+</nav>
+<!--end main-meu-->
+
+
+<!--post banner-->
+    <div class="post-banner">
+        <img src="img/post-img.jpg" alt="">
+        <div class="post-title">
+            <h1 class="animated slideInDown">Your children get only one childhood.<br/> Make it memorable.</h1>
+            <div class="post-share animated zoomIn">
+                <a href="#" class="fb"><i class="fa fa-facebook-f"></i> Share</a>
+                <a href="#" class="tw"><i class="fa fa-twitter"></i> Tweet</a>
+                <a href="#" class="gg"><i class="fa fa-google-plus"></i> Share</a>
+            </div>
+        </div>
+    </div>
+<!--end post banner-->
+
+<!--post-info-->
+    <div class="post-info">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="p-poster">
+                    <img src="img/avatar2.jpg" alt="">
+                    <br/>
+                    <strong>Carol Mitcho</strong>
+                    <p>
+                        Morbi velit eros, sagittis in facilisis non, rhoncus et erat facilisis non.
+                    </p>
+                    <div class="p-poster-l-f">
+                        <a href="#"><i class="fa fa-heart-o"></i> <small>12</small></a>
+                        <a href="#"><i class="fa fa-twitter"></i> <small>follow</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="post-content">
+                    <p>
+                        Bacon ipsum dolor amet pancetta pig rump pork chop capicola cupim.
+                        Tenderloin doner bresaola landjaeger corned beef.
+                        Turkey capicola kielbasa bresaola doner, boudin kielbasa
+                        tenderloin kevin turducken beef <span class="text-info">rump meatloaf</span> cow filet mignon
+                        alcatra swine. Kevin strip steak capicola sausage ribeye tri-tip turkey,
+                        pork chop jowl shankle chuck tail pastrami drumstick pork.
+                        <br/>
+                        <br/>
+
+                        <strong class="note">
+                            Beef bresaola,
+                            prosciutto short loin bacon pancetta flank jowl doner pig pastrami.
+                            bacon pancetta flank jowl doner pig pastrami. bacon pancetta flank
+                            jowl doner pig pastrami.
+                        </strong>
+
+                        <br/>
+                        <br/>
+                        Kevin strip steak capicola sausage ribeye tri-tip turkey,
+                        pork chop jowl shankle chuck tail pastrami drumstick pork. Beef bresaola,
+                        prosciutto short loin bacon pancetta flank jowl doner pig pastrami.
+                        bacon pancetta flank jowl doner pig pastrami. bacon pancetta flank
+                        jowl doner pig pastrami.
+                    </p>
+                    <!--<img src="img/children.jpg" alt="">-->
+                    <p>
+                        Kevin strip steak capicola sausage ribeye tri-tip turkey,
+                        pork chop jowl shankle chuck tail pastrami drumstick pork. Beef bresaola,
+                        prosciutto short loin bacon pancetta flank jowl doner pig pastrami.
+                        bacon pancetta flank jowl doner pig pastrami. bacon pancetta flank
+                        jowl doner pig pastrami.
+                    </p>
+
+                    <!--tags-->
+                    <div class="post-tags">
+                        Tags:
+                        <a href="#">family</a>
+                        <a href="#">children</a>
+                        <a href="#">love</a>
+                        <a href="#">relationship</a>
+                        <a href="#">work</a>
+                        <a href="#">care</a>
+                        <a href="#">design</a>
+                    </div>
+                    <!--end tags-->
+
+                    <!--post comments-->
+                        <div class="post-comments">
+                            <div class="p-comment">
+                                <div class="post-c-img">
+                                    <img src="img/avatar2.jpg" alt="">
+                                </div>
+                                <div class="post-c-desc">
+                                    <strong>Carol Mitcho</strong> &nbsp; <i class="fa fa-clock-o text-info"></i> <small>2 minutes ago</small>
+                                    <p>
+                                        Beef bresaola, prosciutto short loin bacon pancetta flank jowl doner pig pastrami.
+                                        bacon pancetta flank jowl doner pig pastrami.
+                                        &nbsp;&nbsp;<small><i class="fa fa-thumbs-o-up text-danger"></i> 14</small>
+                                        &nbsp;&nbsp;<small><i class="fa fa-reply text-success"></i> reply</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-comment">
+                                <div class="post-c-img">
+                                    <img src="img/user2.jpg" alt="">
+                                </div>
+                                <div class="post-c-desc">
+                                    <strong>Brandon Mike</strong> &nbsp; <i class="fa fa-clock-o text-info"></i> <small>2 minutes ago</small>
+                                    <p>
+                                        Beef bresaola, prosciutto short loin bacon pancetta flank jowl doner pig pastrami.
+                                        bacon pancetta. &nbsp;&nbsp;<small><i class="fa fa-thumbs-o-up text-danger"></i> 14</small>
+                                        &nbsp;&nbsp;<small><i class="fa fa-reply text-success"></i> reply</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-comment">
+                                <div class="post-c-img">
+                                    <img src="img/avatar.jpg" alt="">
+                                </div>
+                                <div class="post-c-desc">
+                                    <strong>Megan Flopa</strong> &nbsp; <i class="fa fa-clock-o text-info"></i> <small>2 minutes ago</small>
+                                    <p>
+                                        Beef bresaola, prosciutto short loin bacon pancetta flank jowl doner pig pastrami.
+                                        bacon pancetta flank jowl doner pig pastrami unless parthd.&nbsp;&nbsp;<small><i class="fa fa-thumbs-o-up text-danger"></i> 14</small>
+                                        &nbsp;&nbsp;<small><i class="fa fa-reply text-success"></i> reply</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    <!--end post comments-->
+
+                    <!--post-form-->
+                        <div class="post-form">
+                            <form>
+                                <div class="form-group">
+                                    <label for="Textarea">Message</label>
+                                    <textarea class="form-control" id="Textarea" rows="5"></textarea>
+                                </div>
+                                <input type="submit" class="btn ui-btn" value="Submit">
+                            </form>
+                        </div>
+                    <!--end post-form-->
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <aside class="aside">
+                    <form action="/">
+                        <div class="posts-search">
+                            <label for="posts-search">
+                                <input id="posts-search" type="search" placeholder="Search Posts">
+                                <i class="fa fa-search"></i>
+                            </label>
+                        </div>
+                    </form>
+
+                    <div class="popular-posts">
+                        <h5>Popular Posts</h5>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover(1).jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="blogPost.html">Most Skilled artists in N...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover(2).jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="blogPost.html">Professional Service Delive...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover3.jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="blogPost.html">Most Resquested services of...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover4.jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="blogPost.html">Step by step guide to ...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+
+                        <h5>Archived Posts</h5>
+
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover3.jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="#">Most Skilled artists in N...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover4.jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="#">Most Skilled artists in N...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover(1).jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="#">Most Skilled artists in N...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+                        <div class="popular-post">
+                            <div>
+                                <img src="img/cover(2).jpg" alt="">
+                            </div>
+                            <p>
+                                <a href="#">Most Skilled artists in N...</a>
+                                <br>
+                                <span>November 9, 2016</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+
+    </div>
+<!--end post-info-->
+
+
+<!--footer-->
+<div class="ui-footer">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">About Us</h6>
+                <p class="about-p">
+                    Strict mode makes several changes to normal JavaScript semantics.
+                    First, strict mode eliminates some JavaScript Strict mode makes several two
+                </p>
+                <div class="links">
+                    <a href="#" class="link-chip">Home</a>
+                    <a href="#" class="link-chip">Services</a>
+                    <a href="#" class="link-chip">Products</a>
+                    <a href="#" class="link-chip">Our Offices</a>
+                    <a href="#" class="link-chip">About</a>
+                    <a href="#" class="link-chip">Blog</a>
+                    <a href="#" class="link-chip">Contact</a>
+                    <a href="#" class="link-chip">Our Offices</a>
+                    <a href="#" class="link-chip">About</a>
+                    <a href="#" class="link-chip">News</a>
+                    <a href="#" class="link-chip">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">Recent News</h6>
+                <div class="recent-n">
+                    <div class="recent-img">
+                        <img src="img/user.jpg" alt="">
+                    </div>
+                    <p class="recent-p">
+                        Strict mode makes several changes to...
+                        <br>
+                        <i>Fri, 26 2017</i>
+                    </p>
+                </div>
+                <div class="recent-n">
+                    <div class="recent-img">
+                        <img src="img/laptop.png" alt="">
+                    </div>
+                    <p class="recent-p">
+                        Strict mode makes several changes to stri...
+                        <br>
+                        <i>Fri, 26 2017</i>
+                    </p>
+                </div>
+                <div class="recent-n">
+                    <div class="recent-img">
+                        <img src="img/avatar.jpg" alt="">
+                    </div>
+                    <p class="recent-p">
+                        Strict mode makes several changes...
+                        <br>
+                        <i>Fri, 26 2017</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">Mailing List</h6>
+                <div class="mailing-list">
+                    <p>Sign up for our mailing list to get the latest updates and offers.</p>
+                    <form class="sub-field">
+                        <input type="email" placeholder="&nbsp;&nbsp;Your Email Here" required>
+                        <button type="submit" class="btn"><i class="fa fa-envelope"></i></button>
+                    </form>
+                    <p>We will not share your email</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">Contact Info</h6>
+                <ul class="list-unstyled contact-info">
+                    <li><i class="fa fa-envelope-o"></i> &nbsp;<small>uidezignlab@gmail.com</small></li>
+                    <li><i class="fa fa-phone"></i> &nbsp;<small>+1 6896 555 856</small>
+                    </li>
+                    <li><i class="fa fa-map-marker"></i> &nbsp;<small>10100 Maui Landon</small>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>United States GA-2222</small>
+                    </li>
+                </ul>
+                <ul class="list-inline sc-ui">
+                    <li class="list-inline-item"><a><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
+<!--end footer-->
+
+<!--back to top button-->
+<div class="back-top">
+    <a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!--end back to top button-->
+
+<script src="3rd-party/jquery-3.2.1.min.js"></script>
+<script src="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+<script src="3rd-party/tether/tether.min.js"></script>
+<script src="3rd-party/bootstrap/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--meta tags-->
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Services Listing HTML5 CSS3 template">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, services, listing">
+    <meta name="author" content="Ui-DesignLab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--end meta tags-->
+
+    <title>Add Service</title>
+
+    <link rel="stylesheet" href="3rd-party/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="3rd-party/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="3rd-party/animate.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Passion+One:700|Raleway|Roboto:100|Tangerine:700" rel="stylesheet">
+    <!--end google fonts-->
+
+</head>
+<body>
+
+<!--top navigation-->
+<div class="dash-top-nav">
+    <h6 class="nav-top-title"><a href="#">ServiceListing</a></h6>
+    <ul class="list-inline nav-top-menu">
+        <li class="list-inline-item"><i class="fa fa-bell-o"></i></li>
+        <li class="list-inline-item"><i class="fa fa-envelope-o"></i></li>
+        <li class="list-inline-item"><a href="dash-profile.html"><span>Brandon Zen</span></a></li>
+        <li class="list-inline-item"><i class="fa fa-sign-out"></i></li>
+    </ul>
+    <a href="#" class="dash-nav-toggle"><i class="fa fa-bars"></i></a>
+</div>
+<!--end top navigation-->
+
+<!--side navigation-->
+<div class="dash-side-nav">
+    <div class="nav-user-img">
+        <img src="img/user2.jpg" alt="">
+    </div>
+    <div class="nav-user-name">
+        <h4>Brandon Zen</h4>
+        <p><i class="fa fa-map-marker"></i> New York</p>
+    </div>
+
+    <ul class="list-unstyled nav-menu">
+        <li><a href="dashboard.html"><i class="fa fa-bars"></i> Dashboard</a></li>
+        <li><a href="dash-messages.html"><i class="fa fa-envelope-o"></i> Messages</a></li>
+        <li><a href="dash-reviews.html"><i class="fa fa-star-half-empty"></i> Reviews</a></li>
+        <li><a href="dash-myServices.html"><i class="fa fa-server"></i> Services</a></li>
+        <li><a class="active" href="dash-addService.html"><i class="fa fa-plus-circle"></i> Add Service</a></li>
+    </ul>
+
+    <div class="nav-logout">
+        <a href="index.html">Log out</a>
+    </div>
+
+</div>
+<!--end side navigation-->
+
+<!--content wrapper-->
+<div class="dash-wrapper">
+    <div class="dash-header">
+        <h4 class="dash-header-title">Add Service</h4>
+        <ul class="list-inline dash-header-menu">
+            <li class="list-inline-item"><a href="index.html">Home <i class="fa fa-angle-right"></i></a></li>
+            <li class="list-inline-item"><a href="dashboard.html">Dashboard</a> <i class="fa fa-angle-right"></i></li>
+            <li class="list-inline-item"><a href="dash-addService.html">add service</a></li>
+        </ul>
+    </div>
+    <div class="dash-content">
+        <form action="/" method="post">
+            <div class="add-service-box">
+                <h6>Basic Info</h6>
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="title">Service Title (<small>Name of your service</small>)</label>
+                            <input type="text" id="title" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="type">Type (<small>Individual or business</small>)</label>
+                            <select name="cat" id="type" class="form-control">
+                                <option value="1" selected>Select Type</option>
+                                <option value="2">Individual</option>
+                                <option value="3">Business</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="category">Category (<small>category of your service</small>)</label>
+                            <select name="category" id="category" class="form-control">
+                                <option value="1" selected>Select category</option>
+                                <option value="2">Cleaning</option>
+                                <option value="3">Mechanic</option>
+                                <option value="4">Electrician</option>
+                                <option value="5">Developer</option>
+                                <option value="6">Hair dresser</option>
+                                <option value="7">Designer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="key">Keywords (<small>keywords related to your service</small>)</label>
+                            <input type="text" id="key" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="add-service-box">
+                <h6>Details</h6>
+                <hr>
+                <div class="form-group">
+                    <label for="desc">Description</label>
+                    <textarea name="" id="desc" rows="4"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="web">Website <i class="fa fa-globe text-info"></i></label>
+                            <input type="text" id="web" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="phone">Phone <i class="fa fa-phone-square text-info"></i></label>
+                            <input type="text" id="phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="email">Email <i class="fa fa-envelope-o text-info"></i></label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="google">Google <i class="fa fa-google-plus text-danger"></i></label>
+                            <input type="url" id="google" class="form-control" placeholder="https://">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="fb">Facebook <i class="fa fa-facebook-f text-primary"></i></label>
+                            <input type="url" id="fb" class="form-control" placeholder="https://">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="form-group">
+                            <label for="tw">Twitter <i class="fa fa-twitter text-info"></i></label>
+                            <input type="url" id="tw" class="form-control" placeholder="https://">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="add-service-box">
+                <h6>Location</h6>
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="city">City </label>
+                            <select name="cat" id="city" class="form-control">
+                                <option value="1" selected>Select City</option>
+                                <option value="2">New York</option>
+                                <option value="3">San Diego</option>
+                                <option value="4">Phoenix</option>
+                                <option value="5">Houston</option>
+                                <option value="6">Austin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="address">Address </label>
+                            <input type="text" id="address" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="state">State </label>
+                            <input type="text" id="state" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="add-service-box">
+                <h6>Pricing</h6>
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="form-group">
+                            <label for="p-title">Pricing Title </label>
+                            <input type="text" id="p-title" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-4">
+                        <div class="form-group">
+                            <label for="p-desc">Pricing Description </label>
+                            <input type="text" id="p-desc" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="form-group">
+                            <label for="price">Price (<small>$</small>)</label>
+                            <input type="text" id="price" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="add-service-box">
+                <h6>Cover Photo</h6>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="cover-select">
+                            <input type="file" id="cover-photo">
+                            <label for="cover-photo">
+                                <i class="fa fa-file-image-o"></i>
+                                <span>Click to select cover photo</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8">
+                        <div class="image-file-name">
+                            <span>No file Selected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn service-btn">Submit for review <i class="fa fa-paper-plane-o"></i></button>
+
+        </form>
+    </div>
+</div>
+<!--end content wrapper-->
+
+
+<script src="3rd-party/jquery-3.2.1.min.js"></script>
+<script src="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+<script src="3rd-party/tether/tether.min.js"></script>
+<script src="3rd-party/bootstrap/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        var fileInput = document.getElementById('cover-photo');
+        fileInput.addEventListener('change', handleFiles, false);
+        function handleFiles() {
+            $('.image-file-name span').html(this.files[0].name + '&nbsp;<i class="fa fa-check-circle-o text-success"></i>');
+        }
+    })
+</script>
+
+</body>
+</html>

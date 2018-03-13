@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--meta tags-->
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Services Listing HTML5 CSS3 template">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, services, listing">
+    <meta name="author" content="Ui-DesignLab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--end meta tags-->
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="3rd-party/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="3rd-party/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="3rd-party/animate.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Passion+One:700|Raleway|Roboto:100|Tangerine:700" rel="stylesheet">
+    <!--end google fonts-->
+
+</head>
+<body>
+
+<!--top navigation-->
+    <div class="dash-top-nav">
+        <h6 class="nav-top-title"><a href="#">ServiceListing</a></h6>
+        <ul class="list-inline nav-top-menu">
+            <li class="list-inline-item"><i class="fa fa-bell-o"></i></li>
+            <li class="list-inline-item"><i class="fa fa-envelope-o"></i></li>
+            <li class="list-inline-item"><a href="dash-profile.html"><span>Brandon Zen</span></a></li>
+            <li class="list-inline-item"><i class="fa fa-sign-out"></i></li>
+        </ul>
+        <a href="#" class="dash-nav-toggle"><i class="fa fa-bars"></i></a>
+    </div>
+<!--end top navigation-->
+
+<!--side navigation-->
+    <div class="dash-side-nav">
+        <div class="nav-user-img">
+            <img src="img/user2.jpg" alt="">
+        </div>
+        <div class="nav-user-name">
+            <h4>Brandon Zen</h4>
+            <p><i class="fa fa-map-marker"></i> New York</p>
+        </div>
+
+        <ul class="list-unstyled nav-menu">
+            <li><a class="active" href="dashboard.html"><i class="fa fa-bars"></i> Dashboard</a></li>
+            <li><a href="dash-messages.html"><i class="fa fa-envelope-o"></i> Messages</a></li>
+            <li><a href="dash-reviews.html"><i class="fa fa-star-half-empty"></i> Reviews</a></li>
+            <li><a href="dash-myServices.html"><i class="fa fa-server"></i> Services</a></li>
+            <li><a href="dash-addService.html"><i class="fa fa-plus-circle"></i> Add Service</a></li>
+        </ul>
+
+        <div class="nav-logout">
+            <a href="index.html">Log out</a>
+        </div>
+
+    </div>
+<!--end side navigation-->
+
+<!--content wrapper-->
+    <div class="dash-wrapper">
+        <div class="dash-header">
+            <h4 class="dash-header-title">Dashboard</h4>
+            <ul class="list-inline dash-header-menu">
+                <li class="list-inline-item"><a href="#">Home <i class="fa fa-angle-right"></i></a></li>
+                <li class="list-inline-item"><a href="#">Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="dash-content">
+
+            <!--statistics slider-->
+                <div class="stats-slide">
+                <div class="owl-carousel owl-theme sts-slider">
+                    <div class="stat-item">
+                        <div class="stat-num">
+                            <h1>$21</h1>
+                            <strong>Revenue</strong>
+                        </div>
+                        <div class="stat-ico">
+                            <img src="img/money-bag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">
+                            <h1>9</h1>
+                            <strong>Active Services</strong>
+                        </div>
+                        <div class="stat-ico">
+                            <img src="img/checklist.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">
+                            <h1>953</h1>
+                            <strong>Services Views</strong>
+                        </div>
+                        <div class="stat-ico">
+                            <img src="img/analytics-15.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">
+                            <h1>97</h1>
+                            <strong>Client Reviews</strong>
+                        </div>
+                        <div class="stat-ico">
+                            <img src="img/trophy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">
+                            <h1>156</h1>
+                            <strong>Times Bookmarked</strong>
+                        </div>
+                        <div class="stat-ico">
+                            <img src="img/heart-shape.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">
+                            <h1>5</h1>
+                            <strong>Notifications</strong>
+                        </div>
+                        <div class="stat-ico">
+                            <img src="img/notification-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end statistics slider-->
+
+            <!--analytics-->
+                <div class="analytics">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="analytic-user">
+                                <div class="analytic-user-cover">
+                                    <img src="img/text2.jpg" alt="">
+                                    <div class="user-cover-mask">
+                                        <img src="img/user2.jpg" alt="" class="user-cover">
+                                    </div>
+                                </div>
+                                <div class="analytic-user-info">
+                                    <h5 class="analytic-user-name">Brandon Zen</h5>
+                                    <strong>Mechanic</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="analytics-stats">
+                                <div class="analitic-item">
+                                    <h1>6.32k</h1>
+                                    <strong>Page Likes</strong>
+                                </div>
+                                <div class="analitic-item">
+                                    <h1>231k</h1>
+                                    <strong>Monthly reach</strong>
+                                </div>
+                                <div class="analitic-item">
+                                    <h1>2</h1>
+                                    <strong>qued Services</strong>
+                                </div>
+                                <div class="analitic-item">
+                                    <h1>11%</h1>
+                                    <strong>Bounce rate</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12">
+                            <div class="analytic-badge">
+                                <div class="badge-img">
+                                    <img src="img/badge.png" alt="">
+                                </div>
+                                <div>
+                                    <p>
+                                        You are doing a good job <i class="text-info">Brandon Zen</i>. Keep it up
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--end analytics-->
+
+            <!--recent activities-->
+            <div class="recent-act">
+                <h5>Recent Activites</h5>
+                <ul class="list-unstyled activity-list">
+                    <li><span>Carol Mitcho left a review</span> <span>12:56 p.m</span></li>
+                    <li><span>Someone bookmarked your service</span> <span>08:17 a.m</span></li>
+                    <li><span>Your service has been approved</span> <span>03 may, 2017</span></li>
+                    <li><span>Carol Mitcho left a review</span> <span>02 may, 2017</span></li>
+                    <li><span>Someone bookmarked your service</span> <span>29 april, 2017</span></li>
+                    <li><span>Your service has been approved</span> <span>12 april, 2017</span></li>
+                </ul>
+            </div>
+            <!--end recent activities-->
+            <i style="color: #6d8e9d;">PNG Icons made by Freepik from <a target="_blank" href="https://www.flaticon.com">www.flaticon.com</a> </i>
+
+        </div>
+    </div>
+<!--end content wrapper-->
+
+<script src="3rd-party/jquery-3.2.1.min.js"></script>
+<script src="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+<script src="3rd-party/tether/tether.min.js"></script>
+<script src="3rd-party/bootstrap/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

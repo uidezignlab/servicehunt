@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--meta tags-->
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Services Listing HTML5 CSS3 template">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, services, listing">
+    <meta name="author" content="Ui-DesignLab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--end meta tags-->
+
+
+    <title>Service-Hunt</title>
+
+    <!--stylesheets-->
+
+    <link rel="stylesheet" href="3rd-party/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="3rd-party/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="3rd-party/animate.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.css">
+    <link rel="stylesheet" href="3rd-party/OwlCarousel2-2.2.1/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--end stylesheets-->
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Passion+One:700|Raleway|Roboto:100|Tangerine:700" rel="stylesheet">
+    <!--end google fonts-->
+
+</head>
+<body>
+
+<!--modals-->
+
+<!--login modal-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="email1">Email:</label>
+                        <input type="email" class="form-control" name="email" autocomplete="email" id="email1">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">Password:</label>
+                        <input type="password" class="form-control" name="password" id="password1">
+                    </div>
+                    <div class="rem-forgot">
+                        <label for="rememberMe" class="ui-chk">
+                            <input type="checkbox" id="rememberMe" name="remember" checked>
+                            <span class="label-text">Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-pwd">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn ui-btn">Sign In</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--end login modal-->
+
+<!--register modal-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="email2">Email:</label>
+                        <input type="email" class="form-control" name="email" autocomplete="email" id="email2">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password:</label>
+                        <input type="password" class="form-control" name="password" id="password2">
+                    </div>
+                    <div class="form-group">
+                        <label for="password3">Confirm Password:</label>
+                        <input type="password" class="form-control" name="password" id="password3">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn ui-btn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end register modal-->
+
+<!--end modals-->
+
+
+<!--main-meu-->
+<nav class="main-menu">
+    <div class="landing-menu animated fadeIn">
+        <h2 class="margin-less"><a href="#" class="logo">ServiceListing</a></h2>
+        <ul class="list-inline land-menu margin-less">
+            <li class="list-inline-item menu-li"><a href="#">Home <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled">
+                    <li><a href="landingpage.html">Landing Page</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="#">Services <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled">
+                    <li><a href="listing.html">Grid Style</a></li>
+                    <li><a href="horizontalListing.html">List Style</a></li>
+                    <li><a href="service.html">Service Detail</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled animated">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blogPost.html">Blog Post</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="#">User Panel <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled animated">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="dash-messages.html">Messages</a></li>
+                    <li><a href="dash-messageBody.html">Message Detail</a></li>
+                    <li><a href="dash-reviews.html">Reviews</a></li>
+                    <li><a href="dash-myServices.html">Services</a></li>
+                    <li><a href="dash-addService.html">Add Service</a></li>
+                    <li><a href="dash-profile.html">User Profile</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item menu-li"><a href="pricing.html">Pricing</a></li>
+            <li class="list-inline-item menu-li"><a href="about.html">About</a></li>
+            <li class="list-inline-item menu-li"><a href="contact.html">Contact</a></li>
+            <li class="list-inline-item menu-li"><a href="#">Account <i class="fa fa-angle-down"></i></a>
+                <ul class="list-unstyled animated">
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <i class="fa fa-bars toggle-mn"></i>
+    </div>
+    <ul class="side-nav list-unstyled">
+        <li><h2 class="text-center"><a href="#" class="logo">Sv-Hunt</a></h2></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="landingpage.html">Landing Page</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="listing.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li class="cls-nav"><i class="fa fa-times"></i></li>
+    </ul>
+</nav>
+<!--end main-meu-->
+
+<!--service-wrapper-->
+<div class="service">
+
+    <!--service banner-->
+    <div class="service-banner">
+        <div class="service-cover">
+            <div class="servicer">
+                <div class="servicer-img">
+                    <img src="img/avatar.jpg" alt="">
+                </div>
+                <div class="servicer-name">
+                    <strong>Megan Aleca</strong>
+                </div>
+            </div>
+            <div class="avail-status">
+                <p class="unavailable">Unavailable</p>
+            </div>
+        </div>
+        <div class="user-badges">
+            <ul class="list-inline badges">
+                <li class="list-inline-item">
+                    <strong>Badges:</strong>
+                </li>
+                <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Exceptional">
+                    <img src="img/star.png" alt="">
+                </li>
+                <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Exceptional">
+                    <img src="img/badge.png" alt="">
+                </li>
+                <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Exceptional">
+                    <img src="img/chevron.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end service banner-->
+
+    <!--service-information-->
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-12 col-12">
+                <div class="service-box">
+                    <h3 class="ui-tt text-left">Developer</h3>
+                    <ul class="list-inline star-rating">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                        <li class="list-inline-item"><small>(4.7/143 reviews)</small></li>
+                    </ul>
+                    <div class="service-nav">
+                        <a href="#overview">Overview</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#review">Reviews</a>
+                        <a href="#add-review">AddReview</a>
+                    </div>
+
+                    <!--over-view-->
+                        <div class="overview" id="overview">
+                            <p>
+                                Ball tip pork loin salami pig ribeye pork chop.
+                                Shank sausage frankfurter pork swine, beef meatloaf
+                                sirloin cupim. Fatback biltong tongue venison kielbasa
+                                ball tip porchetta tenderloin. Burgdoggen swine meatloaf
+                                ball tip biltong, cupim frankfurter rump beef ribs chicken.
+                                Sirloin brisket hamburger salami tongue beef picanha.
+                                Landjaeger ball tip drumstick chicken.
+                                <br/>
+                                <br/>
+                                Fatback biltong tongue venison kielbasa
+                                ball tip porchetta tenderloin. Burgdoggen swine meatloaf
+                                ball tip biltong, cupim frankfurter rump beef ribs chicken.
+                                Sirloin brisket hamburger salami tongue beef picanha.
+                                Landjaeger ball tip drumstick chicken.
+                            </p>
+                        </div>
+                    <!--end over-view-->
+
+                    <!--skills-->
+                        <div class="skills" id="skills">
+                            <h5 class="ui-tt text-left">Skills</h5>
+                            <a href="#" class="skill-chip">Python</a>
+                            <a href="#" class="skill-chip">Sass</a>
+                            <a href="#" class="skill-chip">Html 5</a>
+                            <a href="#" class="skill-chip">Javascript</a>
+                            <a href="#" class="skill-chip">Mongo DB</a>
+                            <a href="#" class="skill-chip">Postgres</a>
+                            <a href="#" class="skill-chip">Ruby</a>
+                            <a href="#" class="skill-chip">Linux</a>
+                        </div>
+                    <!--end skills-->
+
+                    <!--pricing-->
+                        <div id="pricing" class="service-pricing">
+                            <h5 class="ui-tt text-left">Pricing</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item justify-content-between">
+                                    <p><strong>Server:</strong> &nbsp;<small>Installation</small>, <small>Setup</small></p>
+                                    <span class="badge badge-pill"><i>$</i>14.00</span>
+                                </li>
+                                <li class="list-group-item justify-content-between">
+                                    <p><strong>Design:</strong> &nbsp;<small>Wire framing</small>, <small>Prototyping</small>, <small>Implementation</small></p>
+                                    <span class="badge badge-pill"><i>$</i>21.00</span>
+                                </li>
+                                <li class="list-group-item justify-content-between">
+                                    <p><strong>Development:</strong> &nbsp;<small>Backend</small>, <small>Security</small>, <small>Deploy</small></p>
+                                    <span class="badge badge-pill"><i>$</i>34.00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    <!--end pricing-->
+
+                    <!--reviews-->
+                        <div id="review" class="service-reviews">
+                            <h5 class="ui-tt text-left">Reviews <small>(3)</small></h5>
+                            <div class="review">
+                                <div class="review-user-img">
+                                    <img src="img/avatar2.jpg" alt="">
+                                </div>
+                                <div class="review-info">
+                                    <strong>Carol Mitcho</strong><br/>
+                                    <small>June 2017</small>
+                                    <p>
+                                        Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem,
+                                        eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item"><i class="fa fa-share-alt"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-heart"></i> <small>12</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review-user-img">
+                                    <img src="img/user2.jpg" alt="">
+                                </div>
+                                <div class="review-info">
+                                    <strong>Alvaro Kend</strong><br/>
+                                    <small>June 2017</small>
+                                    <p>
+                                        Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem,
+                                        eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item"><i class="fa fa-share-alt"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-heart"></i> <small>12</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review-user-img">
+                                    <img src="img/avatar.jpg" alt="">
+                                </div>
+                                <div class="review-info">
+                                    <strong>Megan Aleca</strong><br/>
+                                    <small>June 2017</small>
+                                    <p>
+                                        Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem,
+                                        eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item">&nbsp;</li>
+                                        <li class="list-inline-item"><i class="fa fa-share-alt"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-heart"></i> <small>12</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review-paginate">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    <!--end reviews-->
+
+                    <!--add review-->
+                        <div id="add-review" class="add-review">
+                            <h5 class="ui-tt text-left">Add Review <small>(<i class="fa fa-star-o text-warning"></i>)</small></h5>
+                            <ul class="list-inline add-rating">
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i>Your rating</i></li>
+                            </ul>
+                            <form action="/" method="post">
+                                <div class="form-group">
+                                    <label for="Email">Email address:</label>
+                                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Username">Username:</label>
+                                    <input type="text" class="form-control" id="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Textarea">Review:</label>
+                                    <textarea class="form-control" id="Textarea" rows="8"></textarea>
+                                </div>
+                                <button class="btn ui-btn" type="submit">Submit Review</button>
+                            </form>
+                        </div>
+                    <!--end add review-->
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                <div class="service-box">
+                    <div class="about-me">
+                        <h4 class="ui-tt text-left"><i class="fa fa-user"></i> Megan Aleca</h4>
+                        <p class="p">
+                            Commodo est luctus eget. Proin in nunc laoreet
+                            justo volutpat blandit enim. Sem felis, ullamcorper
+                            vel aliquam non, varius eget justo.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="user-contact">
+                        <h4 class="ui-tt text-left"><i class="fa fa-envelope-o"></i> Contact</h4>
+                        <form action="/" method="post">
+                            <div class="form-group">
+                                <label for="Textarea1">Your Message to Megan:</label>
+                                <textarea class="form-control" id="Textarea1" rows="6"></textarea>
+                            </div>
+                            <button class="btn ui-btn" type="submit"><i class="fa fa-envelope-o"></i> Send Message</button>
+                        </form>
+                        <ul class="list-inline contact-info">
+                            <li class="list-inline-item"><i class="fa fa-globe"></i> &nbsp;<a href="#"><small>http://example.com</small></a></li>
+                            <li class="list-inline-item"><i class="fa fa-phone"></i> &nbsp;<small>(123) 123-456</small></li>
+                            <li class="list-inline-item"><i class="fa fa-globe"></i> &nbsp;<a href="mailto:info@example.com"><small>info@example.com</small></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="working-hrs">
+                        <h4 class="ui-tt text-left"><i class="fa fa-clock-o"></i> Working Hours</h4>
+                        <p class="wk-tm">
+                            <strong>Monday</strong>
+                            <span>8 AM - 4 PM</span>
+                        </p>
+                        <p class="wk-tm">
+                            <strong>Tuesday</strong>
+                            <span>8 AM - 4 PM</span>
+                        </p>
+                        <p class="wk-tm">
+                            <strong>Wednesday</strong>
+                            <span>8 AM - 4 PM</span>
+                        </p>
+                        <p class="wk-tm">
+                            <strong>Thursday</strong>
+                            <span>8 AM - 4 PM</span>
+                        </p>
+                        <p class="wk-tm">
+                            <strong>Friday</strong>
+                            <span>8 AM - 4 PM</span>
+                        </p>
+                        <p class="wk-tm">
+                            <strong>Saturday</strong>
+                            <span>8 AM - 12 PM</span>
+                        </p>
+                        <p class="wk-tm">
+                            <strong>Sunday</strong>
+                            <span>No work</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="service-share">
+                        <h4 class="ui-tt text-left"><i class="fa fa-share-alt"></i> Share</h4>
+                        <a class="tw" href="#"><i class="fa fa-twitter"></i> Tweet</a>
+                        <a class="fb" href="#"><i class="fa fa-facebook"></i> Share</a>
+                        <a class="gg" href="#"><i class="fa fa-google-plus"></i> Share</a>
+                        <a class="ln" href="#"><i class="fa fa-linkedin"></i> Share</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--end service-information-->
+
+</div>
+<!--end service-wrapper-->
+
+
+
+<!--footer-->
+<div class="ui-footer">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">About Us</h6>
+                <p class="about-p">
+                    Strict mode makes several changes to normal JavaScript semantics.
+                    First, strict mode eliminates some JavaScript Strict mode makes several two
+                </p>
+                <div class="links">
+                    <a href="#" class="link-chip">Home</a>
+                    <a href="#" class="link-chip">Services</a>
+                    <a href="#" class="link-chip">Products</a>
+                    <a href="#" class="link-chip">Our Offices</a>
+                    <a href="#" class="link-chip">About</a>
+                    <a href="#" class="link-chip">Blog</a>
+                    <a href="#" class="link-chip">Contact</a>
+                    <a href="#" class="link-chip">Our Offices</a>
+                    <a href="#" class="link-chip">About</a>
+                    <a href="#" class="link-chip">News</a>
+                    <a href="#" class="link-chip">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">Recent News</h6>
+                <div class="recent-n">
+                    <div class="recent-img">
+                        <img src="img/user.jpg" alt="">
+                    </div>
+                    <p class="recent-p">
+                        Strict mode makes several changes to...
+                        <br>
+                        <i>Fri, 26 2017</i>
+                    </p>
+                </div>
+                <div class="recent-n">
+                    <div class="recent-img">
+                        <img src="img/laptop.png" alt="">
+                    </div>
+                    <p class="recent-p">
+                        Strict mode makes several changes to stri...
+                        <br>
+                        <i>Fri, 26 2017</i>
+                    </p>
+                </div>
+                <div class="recent-n">
+                    <div class="recent-img">
+                        <img src="img/avatar.jpg" alt="">
+                    </div>
+                    <p class="recent-p">
+                        Strict mode makes several changes...
+                        <br>
+                        <i>Fri, 26 2017</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">Mailing List</h6>
+                <div class="mailing-list">
+                    <p>Sign up for our mailing list to get the latest updates and offers.</p>
+                    <form class="sub-field">
+                        <input type="email" placeholder="&nbsp;&nbsp;Your Email Here" required>
+                        <button type="submit" class="btn"><i class="fa fa-envelope"></i></button>
+                    </form>
+                    <p>We will not share your email</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="ui-footer-c">
+                <h6 class="ui-footer-title">Contact Info</h6>
+                <ul class="list-unstyled contact-info">
+                    <li><i class="fa fa-envelope-o"></i> &nbsp;<small>uidezignlab@gmail.com</small></li>
+                    <li><i class="fa fa-phone"></i> &nbsp;<small>+1 6896 555 856</small>
+                    </li>
+                    <li><i class="fa fa-map-marker"></i> &nbsp;<small>10100 Maui Landon</small>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>United States GA-2222</small>
+                    </li>
+                </ul>
+                <ul class="list-inline sc-ui">
+                    <li class="list-inline-item"><a><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <i style="color: white;">PNG Icons made by Freepik from <a target="_blank" href="https://www.flaticon.com">www.flaticon.com</a> </i>
+</div>
+<!--end footer-->
+
+<!--back to top button-->
+<div class="back-top">
+    <a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!--end back to top button-->
+
+<script src="3rd-party/jquery-3.2.1.min.js"></script>
+<script src="3rd-party/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+<script src="3rd-party/tether/tether.min.js"></script>
+<script src="3rd-party/bootstrap/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
